@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:typed_data';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
@@ -31,13 +30,13 @@ Future<bool> makeReport({plant, disease, remedy}) async {
   print(user.toString());
   String dateTime = DateTime.now().toString();
 
-  Directory? appDocDirectory = await getExternalStorageDirectory();
+  // Directory? appDocDirectory = await getExternalStorageDirectory();
 
-  var downloads = "/storage/emulated/0/Download";
+  // var downloads = "/storage/emulated/0/Download";
 
   Permission permission1 = await Permission.storage;
 
-  var dir;
+  // var dir;
   final pdf = pw.Document();
 
   pdf.addPage(

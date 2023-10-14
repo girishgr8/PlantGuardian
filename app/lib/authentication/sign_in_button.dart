@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:plantguardian/camera/camera_page.dart';
 import 'package:plantguardian/pages/user_page.dart';
 import 'package:plantguardian/widgets/login_button.dart';
 
